@@ -82,7 +82,7 @@ def pitch_logic(key, result):
                     if third:
                         extra = '+'
                     else:
-                        thrid = True
+                        third = True
                 else:
                     second = True
             else:
@@ -236,9 +236,9 @@ for year in years:
 
 
     redf.round(2).to_csv(year+'re288.csv')
-    pitchvaluedf['S'].round(3).to_csv('strike_values_288.csv')
-    pitchvaluedf['B'].round(3).to_csv('ball_values_288.csv')
-    pitchvaluedf['F'].round(3).to_csv('foul_values_288.csv')
+    pitchvaluedf['S'].round(3).to_csv(year + 'strike_values_288.csv')
+    pitchvaluedf['B'].round(3).to_csv(year + 'ball_values_288.csv')
+    pitchvaluedf['F'].round(3).to_csv(year + 'foul_values_288.csv')
 
     print(year+'re288.csv saved to disk.')
 
